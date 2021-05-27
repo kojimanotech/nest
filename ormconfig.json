@@ -1,0 +1,17 @@
+{
+  "type": "mysql",
+  "host": "localhost",
+  "port": 3306,
+  "username": "root",
+  "password": "my-secret-pw",
+  "database": "mydb",
+  "entities": ["src/entities/*.entity{.ts,.js}"],
+  "migrations": ["src/migrations/*{.ts,.js}"],
+  "subscribers": ["src/subscribers/**/*{.ts,.js}"],
+  "cli": {
+     "entitiesDir": "src/entities",
+     "migrationsDir": "src/migrations",
+     "subscribersDir": "src/subscribers"
+  },
+  "synchronize": false
+}
